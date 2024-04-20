@@ -16,7 +16,7 @@ const UserPlaces = () => {
     const fetchPlaces = async () => {
       try {
         const responseData = await sendRequest(
-          `https://place-picker-pro-backend-anshika-upadhyays-projects.vercel.app/api/places/user/${userId}`
+          `https://place-picker-server.vercel.app/api/places/user/${userId}`
         );
         setLoadedPlaces(responseData.places);
       } catch (err) {}
