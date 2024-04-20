@@ -1,0 +1,15 @@
+.close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background: #2a006e;
+  color: white;
+  border: none;
+}
+
+.close:hover {
+  background-color: #e28ba9;
+  border: none;
+}
