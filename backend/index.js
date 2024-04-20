@@ -9,6 +9,7 @@ const mongoose = require("mongoose");
 const placesRoutes = require("./routes/places-routes");
 const usersRoutes = require("./routes/users-routes");
 const HttpError = require("./models/http-error");
+const MONGO_URL = process.env.MONGO_URI
 
 const app = express();
 
@@ -49,9 +50,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(
-    "mongodb+srv://anshiii1503:i4f76loK7V52nTkI@cluster0.qbnm2vj.mongodb.net/Place-Picker?retryWrites=true&w=majority&appName=Cluster0"
-  )
+  .connect(MONGO_URL)
   .then(() => {
     app.listen(5000);
     console.log("Server started!");
