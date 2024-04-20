@@ -1,4 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
+import Resizer from "react-image-file-resizer";
+
 
 import Button from './Button';
 import './ImageUpload.css';
@@ -21,19 +23,37 @@ const ImageUpload = props => {
     fileReader.readAsDataURL(file);
   }, [file]);
 
-  const pickedHandler = event => {
+  const resizeFile = (file) =>
+    new Promise((resolve) => {
+      Resizer.imageFileResizer(
+        file,
+        300,
+        300,
+        "JPEG",
+        100,
+        0,
+        (uri) => {
+          resolve(uri);
+        },
+        "file"
+      );
+    });
+
+  const pickedHandler = async (event) => {
     let pickedFile;
+    let resizedImg;
     let fileIsValid = isValid;
     if (event.target.files && event.target.files.length === 1) {
       pickedFile = event.target.files[0];
-      setFile(pickedFile);
+      resizedImg = await resizeFile(pickedFile);
+      setFile(resizedImg);
       setIsValid(true);
       fileIsValid = true;
     } else {
       setIsValid(false);
       fileIsValid = false;
     }
-    props.onInput(props.id, pickedFile, fileIsValid);
+    props.onInput(props.id, resizedImg, fileIsValid);
   };
 
   const pickImageHandler = () => {
