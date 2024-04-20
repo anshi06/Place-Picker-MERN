@@ -40,7 +40,7 @@ const UpdatePlace = () => {
     const fetchPlace = async () => {
       try {
         const responseData = await sendRequest(
-          `https://place-picker-pro-backend-anshika-upadhyays-projects.vercel.app/api/places/${placeId}`
+          `https://place-picker-server.vercel.app/api/places/${placeId}`
         );
         setLoadedPlace(responseData.place);
         setFormData(
@@ -65,7 +65,7 @@ const UpdatePlace = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `https://place-picker-pro-backend-anshika-upadhyays-projects.vercel.app/api/places/${placeId}`,
+        `https://place-picker-server.vercel.app/api/places/${placeId}`,
         "PATCH",
         JSON.stringify({
           title: formState.inputs.title.value,
