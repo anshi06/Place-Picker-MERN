@@ -13,7 +13,7 @@ const Users = () => {
     const fetchUsers = async () => {
       try {
         const responseData = await sendRequest(
-          "https://place-picker-pro-backend-anshika-upadhyays-projects.vercel.app/api/users"
+          "https://place-picker-server.vercel.app/api/users"
         );
 
         setLoadedUsers(responseData.users);
