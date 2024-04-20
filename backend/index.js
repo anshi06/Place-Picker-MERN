@@ -31,6 +31,10 @@ app.use((req, res, next) => {
 app.use("/api/places", placesRoutes);
 app.use("/api/users", usersRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Hello PlacePicker-server!");
+});
+
 app.use((req, res, next) => {
   const error = new HttpError("Could not find this route.", 404);
   throw error;
@@ -60,11 +64,3 @@ mongoose
 
 module.exports = app;
 
-
-// const express = require("express");
-// const app = express();
-// const port = 3000;
-
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`);
-// });
