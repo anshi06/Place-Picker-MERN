@@ -32,7 +32,7 @@ const PlaceItem = (props) => {
     setShowConfirmModal(false);
     try {
       await sendRequest(
-        `https://place-picker-pro-backend-anshika-upadhyays-projects.vercel.app/api/places/${props.id}`,
+        `https://place-picker-server.vercel.app/api/places/${props.id}`,
         "DELETE",
         null,
         {
@@ -82,7 +82,7 @@ const PlaceItem = (props) => {
           {isLoading && <LoadingSpinner asOverlay />}
           <div className="place-item__image">
             <img
-              src={`https://place-picker-pro-backend-anshika-upadhyays-projects.vercel.app/${props.image}`}
+              src={`https://place-picker-server.vercel.app/${props.image}`}
               alt={props.title}
             />
           </div>
