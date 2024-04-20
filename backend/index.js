@@ -15,6 +15,10 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
 app.use("/uploads/images", express.static(path.join("uploads", "images")));
 
 app.use((req, res, next) => {
@@ -52,20 +56,18 @@ app.use((error, req, res, next) => {
 mongoose
   .connect(MONGO_URL)
   .then(() => {
-    app.listen(5000);
-    console.log("Server started!");
+    console.log("Server started and mongo connected!");
   })
   .catch((err) => {
     console.log(err);
   });
 
+module.exports = app;
+
+
 // const express = require("express");
 // const app = express();
 // const port = 3000;
-
-// app.get("/", (req, res) => {
-//   res.send("Hello World!");
-// });
 
 // app.listen(port, () => {
 //   console.log(`Example app listening at http://localhost:${port}`);
