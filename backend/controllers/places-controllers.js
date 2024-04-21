@@ -211,7 +211,18 @@ const deletePlace = async (req, res, next) => {
     return next(error);
   }
 
-  // gridfsBucket.delete(new ObjectId(imagePath));
+  try {
+    const gridfsBucket = new mongoose.mongo.GridFSBucket(
+      mongoose.connection.db,
+      {
+        bucketName: "photos",
+      }
+    );
+
+    await gridfsBucket.delete(new mongoose.Types.ObjectId(imagePath));
+  } catch (err) {
+    console.log(err, "Error in deleting image");
+  }
 
   res.status(200).json({ message: "Deleted place." });
 };
