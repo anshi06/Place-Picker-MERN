@@ -1,10 +1,9 @@
-const fs = require("fs");
-
 const { validationResult } = require("express-validator");
 const mongoose = require("mongoose");
 
 const HttpError = require("../models/http-error");
 const getCoordsForAddress = require("../util/location");
+
 const Place = require("../models/place");
 const User = require("../models/user");
 
@@ -84,7 +83,7 @@ const createPlace = async (req, res, next) => {
     description,
     address,
     location: coordinates,
-    image: req.file.path,
+    image: req.file.id,
     creator,
   });
 
@@ -173,7 +172,7 @@ const deletePlace = async (req, res, next) => {
   try {
     place = await Place.findById(placeId).populate("creator");
   } catch (err) {
-    console.log(err)
+    console.log(err);
     const error = new HttpError(
       "Something went wrong, could not delete place.",
       500
@@ -204,7 +203,7 @@ const deletePlace = async (req, res, next) => {
     await place.creator.save({ session: sess });
     await sess.commitTransaction();
   } catch (err) {
-    console.log(err)
+    console.log(err);
     const error = new HttpError(
       "Something went wrong, could not delete place.",
       500
@@ -212,9 +211,7 @@ const deletePlace = async (req, res, next) => {
     return next(error);
   }
 
-  fs.unlink(imagePath, (err) => {
-    console.log(err);
-  });
+  // gridfsBucket.delete(new ObjectId(imagePath));
 
   res.status(200).json({ message: "Deleted place." });
 };

@@ -36,8 +36,8 @@ const PlaceItem = (props) => {
         "DELETE",
         null,
         {
-          Authorization: "Bearer " + auth.token,
-        }
+        Authorization: "Bearer " + auth.token,
+      }
       );
       props.onDelete(props.id);
     } catch (err) {}
@@ -82,7 +82,7 @@ const PlaceItem = (props) => {
           {isLoading && <LoadingSpinner asOverlay />}
           <div className="place-item__image">
             <img
-              src={`https://place-picker-server.vercel.app/${props.image}`}
+              src={`https://place-picker-server.vercel.app/images/${props.image}`}
               alt={props.title}
             />
           </div>
