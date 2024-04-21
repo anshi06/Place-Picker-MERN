@@ -127,7 +127,7 @@ const Auth = () => {
               center
               id="image"
               onInput={inputHandler}
-              errorText="Please provide an image."
+              errorText="Please provide an image less than 1mb to avoid any issues."
             />
           )}
           <Input

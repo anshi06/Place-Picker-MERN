@@ -91,7 +91,7 @@ const NewPlace = () => {
         <ImageUpload
           id="image"
           onInput={inputHandler}
-          errorText="Please provide an image."
+          errorText="Please provide an image less than 1mb to avoid any issues."
         />
         <Button type="submit" disabled={!formState.isValid}>
           ADD PLACE
