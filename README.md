@@ -53,7 +53,7 @@
 [![Place-Picker][pic-2]]('/images/pic-2.png')
 [![Place-Picker][pic-3]]('/images/pic-3.png')
 <img align="left" src="/images/pic-4.jpeg" width="300" alt="pic-4"/>
-<img src="/images/pic-5.jpeg" width="300" alt="pic-5" hspace="30"/> 
+<img src="/images/pic-5.jpeg" width="300" alt="pic-5" hspace="25"/> 
 <img align="right" src="/images/pic-6.jpeg" width="300" alt="pic-6"/>
 
 Our app provides a user-friendly platform for users to pick and save places of interest on a map, along with the ability to upload and associate images with each place. Whether you're exploring new places or keeping track of your favorite spots, our app simplifies the process of organizing and visualizing your chosen locations.
