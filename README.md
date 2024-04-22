@@ -97,7 +97,7 @@ Here's why:
 * Error Handling :white_check_mark:
 * Map APIs with Mapbox  :white_check_mark:
 * Production-Ready Image Handling  :white_check_mark:
-* Mongo grid-fs for images storage  :white_check_mark:
+* Mongo grid-fs for image storage  :white_check_mark:
 
 <!-- CONTACT -->
 ## Contact
