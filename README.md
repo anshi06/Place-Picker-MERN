@@ -106,8 +106,6 @@ Anshika Upadhyay - [@linkedIn](https://www.linkedin.com/in/anshika-upadhyay-5413
 
 Project Link: [Place-picker-Mern](https://place-picker-frontend.vercel.app/)
 
-Code Link: [Place-picker-Mern](https://github.com/anshi06/Place-Picker-MERN/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
