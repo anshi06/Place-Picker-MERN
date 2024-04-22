@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-import MainHeader from './MainHeader';
-import NavLinks from './NavLinks';
-import SideDrawer from './SideDrawer';
-import Backdrop from '../UIElements/Backdrop';
-import './MainNavigation.css';
+import MainHeader from "./MainHeader";
+import NavLinks from "./NavLinks";
+import SideDrawer from "./SideDrawer";
+import Backdrop from "../UIElements/Backdrop";
+import placeIcon from "./place.png";
+import "./MainNavigation.css";
 
-const MainNavigation = props => {
+const MainNavigation = (props) => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
 
   const openDrawerHandler = () => {
@@ -30,14 +31,22 @@ const MainNavigation = props => {
       <MainHeader>
         <button
           className="main-navigation__menu-btn"
-          onClick={openDrawerHandler}
-        >
+          onClick={openDrawerHandler}>
           <span />
           <span />
           <span />
         </button>
         <h1 className="main-navigation__title">
-          <Link to="/">YourPlaces</Link>
+          <Link to="/">
+            <p style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+              <img
+                style={{ width: "2.5rem", height: "2.5rem" }}
+                src={placeIcon}
+                alt="place-icon"
+              />
+              Place Picker
+            </p>
+          </Link>
         </h1>
         <nav className="main-navigation__header-nav">
           <NavLinks />
