@@ -123,7 +123,7 @@ Project Link: [Place-picker-Mern](https://place-picker-frontend.vercel.app/)
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/Contributers-1-blue
 [contributors-url]: https://github.com/anshi06/Place-Picker-MERN/graphs/contributors
-[vercel-shield]: https://img.shields.io/badge/Preview-vercel-black
+[vercel-shield]: https://img.shields.io/badge/Preview-vercel-blue
 [vercel-url]:https://vercel.com/anshika-upadhyays-projects
 [linkedin-shield]: https://img.shields.io/badge/linkedIn-ln-blue
 [linkedin-url]: https://www.linkedin.com/in/anshika-upadhyay-541309221/
