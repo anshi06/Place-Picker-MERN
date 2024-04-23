@@ -3,7 +3,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Vercel][vercel-shield]][vercel-url]
-
+[![License][license-shield]][license-url]
 
 
 <!-- PROJECT LOGO -->
@@ -127,6 +127,8 @@ Project Link: [Place-picker-Mern](https://place-picker-frontend.vercel.app/)
 [vercel-url]:https://vercel.com/anshika-upadhyays-projects
 [linkedin-shield]: https://img.shields.io/badge/linkedIn-ln-blue
 [linkedin-url]: https://www.linkedin.com/in/anshika-upadhyay-541309221/
+[license-url]:https://github.com/anshi06/Place-Picker-MERN/blob/main/LICENSE
+[license-shield]: https://img.shields.io/badge/licence-MTS-blue
 [pic-1]: images/web.png
 [pic-2]: images/mobile.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
