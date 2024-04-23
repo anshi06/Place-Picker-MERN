@@ -51,10 +51,6 @@
 
 [![Place-Picker][pic-1]]('/images/pic-1.png')
 [![Place-Picker][pic-2]]('/images/pic-2.png')
-[![Place-Picker][pic-3]]('/images/pic-3.png')
-<img align="centre" src="/images/pic-4.jpeg" width="250" alt="pic-4" hspace="10"/>
-<img align="centre" src="/images/pic-5.jpeg" width="250" alt="pic-5" hspace="10"/> 
-<img align="centre" src="/images/pic-6.jpeg" width="250" alt="pic-6"/>
 
 Our app provides a user-friendly platform for users to pick and save places of interest on a map, along with the ability to upload and associate images with each place. Whether you're exploring new places or keeping track of your favorite spots, our app simplifies the process of organizing and visualizing your chosen locations.
 
@@ -127,16 +123,12 @@ Project Link: [Place-picker-Mern](https://place-picker-frontend.vercel.app/)
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/badge/Contributers-1-blue
 [contributors-url]: https://github.com/anshi06/Place-Picker-MERN/graphs/contributors
-[vercel-shield]:https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white
+[vercel-shield]: https://img.shields.io/badge/Preview-vercel-black
 [vercel-url]:https://vercel.com/anshika-upadhyays-projects
 [linkedin-shield]: https://img.shields.io/badge/linkedIn-ln-blue
 [linkedin-url]: https://www.linkedin.com/in/anshika-upadhyay-541309221/
 [pic-1]: images/pic-1.png
 [pic-2]: images/pic-2.png
-[pic-3]: images/pic-3.png
-[pic-4]: images/pic-4.jpeg
-[pic-5]: images/pic-5.jpeg
-[pic-6]: images/pic-6.jpeg
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [Mongo]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
